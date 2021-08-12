@@ -36,7 +36,7 @@ header{
 }
 h1{
 	font-size: 5rem;
-	color: #d4ab4b;
+	color: #f5c85e;
     font-family: 'Stardew Valley', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #mapid {
@@ -47,7 +47,7 @@ h1{
 	body{
 		background-image: url("img/background-phone.png");
 	}
-	#mapid{
+	#mapid{								
 		width: 100vw;
 	}
 }
