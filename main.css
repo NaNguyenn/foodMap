@@ -60,6 +60,9 @@ h2{
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+	background-image: url("img/background-phone.png");
+  }
 
 @media (max-width: 480px) {
 	body{
