@@ -10,7 +10,7 @@ var streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{
     zoomOffset: -1,
     accessToken: 'your.mapbox.access.token'
 });
-streets.addTo(mymap);
+//streets.addTo(mymap);
 
 var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -19,7 +19,7 @@ var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercol
     maxZoom: 16,
     ext: 'jpg'
 });
-//watercolor.addTo(mymap);
+watercolor.addTo(mymap);
 
 
 var iconBe = L.icon({
