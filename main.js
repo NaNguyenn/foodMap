@@ -171,8 +171,8 @@ markerNemNuong.bindPopup("<h2>Nha Trang Rolls</h2>");
 var markerRamen = L.marker([21.029683, 105.819658], { icon: iconRamen }).addTo(mymap);
 markerRamen.bindPopup("<h2>Ramen2go</h2>");
 
-function onMapClick(e) {
+/*function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
 }
 
-mymap.on('click', onMapClick);
+mymap.on('click', onMapClick);*/
