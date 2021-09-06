@@ -64,6 +64,10 @@ h2{
 	background-image: url("img/background-phone.png");
   }
 
+p{
+	color: #f5c85e;
+}
+
 @media (max-width: 480px) {
 	body{
 		background-image: url("img/background-phone.png");

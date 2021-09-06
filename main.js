@@ -69,10 +69,10 @@ iconNemNuong = new iconFood({ iconUrl: "img/nemNuong.png" });
 iconRamen = new iconFood({ iconUrl: "img/ramen.png" });
 
 var markerBe = L.marker([21.037853, 105.821825], { icon: iconBe }).addTo(mymap);
-markerBe.bindPopup("Mình là em bé Vịt iu nhứt. Hôm nay mình ăn gì đây nhờ");
+markerBe.bindPopup("<p>Mình là em bé Vịt iu nhứt. Hôm nay mình ăn gì đây nhờ</p>");
 
 var markerBeo = L.marker([21.043056, 105.784553], { icon: iconBeo }).addTo(mymap);
-markerBeo.bindPopup("Mình là Vịt. Em bé có muốn thêm thật là nhìu địa chỉ cùng anh không");
+markerBeo.bindPopup("<p>Em bé có muốn thêm thật là nhìu địa chỉ cùng anh không</p>");
 
 var markerPho = L.marker([21.002941, 105.835982], { icon: iconPho }).addTo(mymap);
 markerPho.bindPopup("<h2>Pho Male</h2>");
