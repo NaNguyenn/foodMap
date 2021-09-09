@@ -44,6 +44,15 @@ var iconFood = L.Icon.extend({
     }
 });
 
+var iconBuilding = L.Icon.extend({
+    options: {
+        iconSize: [60, 60],
+        iconAnchor: [30, 30],
+        popupAnchor: [0, -30],
+    }
+});
+
+
 var iconPho = new iconFood({ iconUrl: "img/pho.png" }),
     iconBun = new iconFood({ iconUrl: "img/bun.png" }),
     iconBanhGato = new iconFood({ iconUrl: "img/banhGato.png" }),
@@ -60,13 +69,17 @@ var iconPho = new iconFood({ iconUrl: "img/pho.png" }),
     iconPizza = new iconFood({ iconUrl: "img/pizza.png" }),
     iconSpaghetti = new iconFood({ iconUrl: "img/spaghetti.png" }),
     iconTaco = new iconFood({ iconUrl: "img/taco.png" }),
-    iconTrung = new iconFood({ iconUrl: "img/trung.png" });
-iconBongNgo = new iconFood({ iconUrl: "img/bongNgo.png" });
-iconBanhTrang = new iconFood({ iconUrl: "img/banhTrang.png" });
-iconSuaChua = new iconFood({ iconUrl: "img/yogurt.png" });
-iconChao = new iconFood({ iconUrl: "img/chao.png" });
-iconNemNuong = new iconFood({ iconUrl: "img/nemNuong.png" });
-iconRamen = new iconFood({ iconUrl: "img/ramen.png" });
+    iconTrung = new iconFood({ iconUrl: "img/trung.png" }),
+    iconBongNgo = new iconFood({ iconUrl: "img/bongNgo.png" }),
+    iconBanhTrang = new iconFood({ iconUrl: "img/banhTrang.png" }),
+    iconSuaChua = new iconFood({ iconUrl: "img/yogurt.png" }),
+    iconChao = new iconFood({ iconUrl: "img/chao.png" }),
+    iconNemNuong = new iconFood({ iconUrl: "img/nemNuong.png" }),
+    iconRamen = new iconFood({ iconUrl: "img/ramen.png" });
+
+var iconTttm = new iconBuilding({ iconUrl: "img/tttm.png" }),
+    iconClinic = new iconBuilding({ iconUrl: "img/clinic.png" });
+
 
 var markerBe = L.marker([21.037853, 105.821825], { icon: iconBe }).addTo(mymap);
 markerBe.bindPopup("<p>Mình là em bé Vịt iu nhứt. Hôm nay mình ăn gì đây nhờ</p>");
@@ -170,6 +183,12 @@ markerNemNuong.bindPopup("<h2>Nha Trang Rolls</h2>");
 
 var markerRamen = L.marker([21.029683, 105.819658], { icon: iconRamen }).addTo(mymap);
 markerRamen.bindPopup("<h2>Ramen2go</h2>");
+
+var markerTttm = L.marker([21.031415, 105.815147], { icon: iconTttm }).addTo(mymap);
+markerTttm.bindPopup("<h2>Our Metropolis</h2>");
+
+var markerClinic = L.marker([21.038269, 105.827056], { icon: iconClinic }).addTo(mymap);
+markerClinic.bindPopup("<h2>Our Clinic</h2>");
 
 /*function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
